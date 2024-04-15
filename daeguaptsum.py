@@ -4,12 +4,12 @@ import numpy as np
 import datetime
 
 # 데이터 시각화 분석
-import matplotlib as mpl
-import matplotlib.pyplot as plt
-import seaborn as sns
+# import matplotlib as mpl
+# import matplotlib.pyplot as plt
+# import seaborn as sns
 
 # 시각화 한글 문자
-mpl.rc('font', family ='Malgun Gothic')
+# mpl.rc('font', family ='Malgun Gothic')
 # 아파트단지 코드 수집
 from bs4 import BeautifulSoup
 from selenium import webdriver
@@ -95,10 +95,10 @@ df = df.groupby('단지명')['총세대수','매매','전세','월세'].sum()
 
 # 그래프그리기
 df.plot(kind='bar',figsize=(16,10))
-plt.title("매물현황", fontsize=20)
-plt.xlabel("단지명")
-plt.ylabel("매물건수")
-# plt.xlim([-1, 15])
-plt.xticks(rotation= 75)
-# plt.savefig("대구수성동 아파트 단지별세대수.png")
-plt.show()
+# plt.title("매물현황", fontsize=20)
+# plt.xlabel("단지명")
+# plt.ylabel("매물건수")
+# # plt.xlim([-1, 15])
+# plt.xticks(rotation= 75)
+# # plt.savefig("대구수성동 아파트 단지별세대수.png")
+# plt.show()
